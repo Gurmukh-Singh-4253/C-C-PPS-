@@ -12,7 +12,8 @@ int main(){
   for (int i =0; i<10;i++){
     healthissue = 'n';
     printf("Enter the name of person %d:",i+1);
-    scanf("%s",people[i].name);
+    // scanf("%s",people[i].name);
+    fgets(people[i].name,40,stdin);
     printf("Enter the age of person %d:",i+1);
     scanf("%d",&people[i].age);
     printf("Does the person have diabetes or hypertension (y/n):");
